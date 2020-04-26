@@ -12,6 +12,9 @@ from kivy.uix.button import Button
 from kivy.animation import Animation
 from kivy.properties import ObjectProperty
 
+
+
+
 # Initial Screen with cicada logo and prompt
 class InitScr(BoxLayout):
     def __init__(self, **kwargs):
@@ -86,6 +89,7 @@ class MainScr(GridLayout):
         self.add_widget(self.autotag)
         self.add_widget(self.tag)
         self.add_widget(self.help)
+
 
 class MainApp(App):
     def build(self):

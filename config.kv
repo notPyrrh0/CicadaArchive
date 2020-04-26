@@ -1,0 +1,41 @@
+<InitScr>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: [20, 20]
+        
+        Image:
+            source: "src/cicada2.jpg"
+            size_hint: (1, 0.75)
+        
+        Label:
+            padding: [20, 20]
+            font_name: "src/DejaVuSansMono.ttf"
+            text: "Thank you for helping to keep this archive up to date.\n Before you can create a pull request, you need \n to update the tags of the files you've added."
+            halign: "center"
+            size_hint: (1, 0.15)
+            font_size: 15
+
+                
+        Label:
+            name: "prompt"
+            id: prompt
+            font_name: "src/DejaVuSansMono.ttf"
+            text: "========[  Click anywhere to continue  ]========"
+            halign: "center"
+            size_hint: (1, 0.1)
+            font_size: 15
+
+<MainScr>:
+    FloatLayout
+        
+        Button:
+            text: "View Database"
+        
+        Button:
+            text: "Add work to database"
+        
+        Button:
+            text: "Exit"
+
+
+
